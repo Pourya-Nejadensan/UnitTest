@@ -42,4 +42,16 @@ class UnitTestTest {
         //THEN
         assertEquals(4, actual);
     }
+
+    @Test
+    public void toUpperCaseTest_when_pourya_thenReturn_POURYA(){
+        //GIVEN
+        String a = "pourya";
+
+        //WHEN
+        String actual = UnitTest.toUpperCase(a);
+
+        //THEN
+        assertEquals("POURYA", actual);
+    }
 }

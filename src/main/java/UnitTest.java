@@ -12,7 +12,12 @@ public class UnitTest {
     public static boolean isEven(int a){
         return a % 2 == 0;
     }
+
     public static int multiple(int a, int b){
         return a * b;
+    }
+
+    public static String toUpperCase(String string){
+        return string.toUpperCase();
     }
 }
