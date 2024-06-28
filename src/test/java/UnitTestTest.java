@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import static java.lang.Integer.sum;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UnitTestTest {
@@ -12,9 +11,21 @@ class UnitTestTest {
         int b = 2;
 
         //WHEN
-        int actual = sum(a, b);
+        int actual = UnitTest.sum(a, b);
 
         //THEN
         assertEquals(3,actual);
+    }
+
+    @Test
+    public void isEvenTest_when1_thenReturnFalse(){
+        //GIVEN
+        int a = 1;
+
+        //WHEN
+        boolean actual = UnitTest.isEven(a);
+
+        //THEN
+        assertFalse(actual);
     }
 }
