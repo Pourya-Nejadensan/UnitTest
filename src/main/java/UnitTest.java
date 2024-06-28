@@ -20,4 +20,8 @@ public class UnitTest {
     public static String toUpperCase(String string){
         return string.toUpperCase();
     }
+
+    public static boolean isPositive(int a){
+        return a > 0;
+    }
 }

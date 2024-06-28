@@ -54,4 +54,16 @@ class UnitTestTest {
         //THEN
         assertEquals("POURYA", actual);
     }
+
+    @Test
+    public void isPositiveTest_when1_thenReturnTure(){
+        //GIVEN
+        int a = 1;
+
+        //WHEN
+        boolean actual = UnitTest.isPositive(a);
+
+        //THEN
+        assertTrue(actual);
+    }
 }
