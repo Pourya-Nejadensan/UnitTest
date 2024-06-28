@@ -28,4 +28,18 @@ class UnitTestTest {
         //THEN
         assertFalse(actual);
     }
+
+    @Test
+    public void multipleTest_when2and2_thenReturn4(){
+        //GIVEN
+        int a = 2;
+        int b = 2;
+
+
+        //WHEN
+        int actual = UnitTest.multiple(a, b);
+
+        //THEN
+        assertEquals(4, actual);
+    }
 }
